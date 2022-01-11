@@ -12,7 +12,7 @@ The spectrometer has build and performed in earlier 2000's, by Laboratory of Ele
 (https://www.iq.ufrj.br/laboratorios/laboratorio-de-impacto-de-fotons-e-eletrons-life/)
 
 The code was based write code used in a 'RESONANCE IONIZATION SPECTROSCOPY WITH TIME OF FLIGHT MASS SPECTROMETRY'
-- Waso, Frederick John (2019-04), Thesis (MSc) -- Stellenbosch University, 2019. http://scholar.sun.ac.za/handle/10019.1/106191
+- Waso, Frederick John (2019-04), Thesis (MSc) -- Stellenbosch University, 2019. (http://scholar.sun.ac.za/handle/10019.1/106191)
 
 # Histogram obtained by simulation:
 ![histogram_result1](https://user-images.githubusercontent.com/97371621/148949346-b4c58f02-990f-447c-bec7-cc855e88397d.png)

@@ -1,6 +1,9 @@
 # Simulation IBSimu of a Ligth TOF-Mass Spectrometer 
 Computational Ion Optics
 
+![tofplot_zx](https://user-images.githubusercontent.com/97371621/148947954-d5b24e93-795d-4907-a465-a015b97c1044.jpg)
+
+
 Full code C++, Make compiler and Draw (CAD schematic design) to run a simulation of a functional UV-Ligth Time-of-Fligth Mass Spectrometer on ion optical computer simulation package – Ion Beam Simulator – IBSimu.
 
 IBSimu has developed by T.Kalvas et al. (http://ibsimu.sourceforge.net/).

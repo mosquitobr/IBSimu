@@ -1,7 +1,7 @@
 [![License: GPL](https://img.shields.io/badge/License-GPL-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
 
-# Simulation IBSimu of a Ligth TOF-Mass Spectrometer 
+# Simulation IBSimu of a Light TOF-Mass Spectrometer 
 Computational Ion Optics
 
 ![tofplot_zx](https://user-images.githubusercontent.com/97371621/148947954-d5b24e93-795d-4907-a465-a015b97c1044.jpg)
@@ -13,7 +13,7 @@ Full code C++, Make compiler and Draw (CAD schematic design) to run simulations 
 
 The time-of-flight mass spectrometer (TOFMS), has been designed and built in later 90's, by [MACIEL J.B. et al.](https://aip.scitation.org/doi/abs/10.1063/1.54579), at the Laboratory of Electrons and Fotons Impact ('[LIFE](https://www.iq.ufrj.br/laboratorios/laboratorio-de-impacto-de-fotons-e-eletrons-life/)' in Portuguese), Department of Physical Chemistry, Institute of Chemistry, Federal University of Rio de Janeiro – UFRJ.- Brazil.
 
-The simulation parameters to electrodes was obtained in 'FFRAGMENTAÇÃO IÔNICA DE MOLECULAS NAS REGIOÕES DO ULTRAVIOLETA DE VÁCUO E RAIOS-X: EMPREGO DAS TÉCNICAS TOF-MS E COINCIDÊNCIA ELÉTRON-ÍON'
+The simulation parameters to electrodes was obtained in 'FRAGMENTAÇÃO IÔNICA DE MOLÉCULAS NAS REGIÕES DO ULTRAVIOLETA DE VÁCUO E RAIOS-X: EMPREGO DAS TÉCNICAS TOF-MS E COINCIDÊNCIA ELÉTRON-ÍON'
 - LAGO, Alexsandre Figueiredo, Thesis (PhD) -- IQ–UFRJ, 2003.
 
 The code was based write code used in 'RESONANCE IONIZATION SPECTROSCOPY WITH TIME OF FLIGHT MASS SPECTROMETRY'

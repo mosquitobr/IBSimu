@@ -129,6 +129,7 @@ void simu( int argc, char **argv )
     geom.set_boundary( 12, Bound(BOUND_DIRICHLET, Vdetions) );
    
     geom.build_mesh();
+    geom.build_surface();	
     geom.save( "tofgeom.dat" );
     
     // Construct the required fields

@@ -20,4 +20,4 @@ Some parameters for initial beams presents here and the code write, was based at
 - Waso, Frederick John (2019-04), [Thesis (MSc)](http://scholar.sun.ac.za/handle/10019.1/106191) -- Stellenbosch University, 2019.
 
 # Histogram obtained by simulation:
-![histogram_result1](https://user-images.githubusercontent.com/97371621/148949346-b4c58f02-990f-447c-bec7-cc855e88397d.png)
+![Histogram_SCIDavis_TOF-H1](https://user-images.githubusercontent.com/97371621/166404506-5d7ddc2d-2825-491a-9b65-afa043ff0cd5.png)

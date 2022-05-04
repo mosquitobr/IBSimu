@@ -21,3 +21,14 @@ Some parameters for initial beams presents here and the code write, was based at
 
 # Histogram obtained by simulation:
 ![Histogram_SCIDavis_TOF-H1](https://user-images.githubusercontent.com/97371621/166404506-5d7ddc2d-2825-491a-9b65-afa043ff0cd5.png)
+
+## simulation image galery
+![3dcutview](https://user-images.githubusercontent.com/97371621/166817729-58eae966-bd97-483b-879a-d1e793fcfcb7.png)
+
+![TOFL203D_EField](https://user-images.githubusercontent.com/97371621/166817943-1e2a3bde-c8fd-413a-a9a5-0cb865f07834.png)
+
+![TOFL203D_J](https://user-images.githubusercontent.com/97371621/166818037-380c0d77-a036-48c8-aeda-e0ac1dd99f6f.png)
+
+![TOFL203D_XY](https://user-images.githubusercontent.com/97371621/166822441-22bc451f-05d7-43b9-92cd-2180ca78e95f.png)
+
+![char_plot_epot](https://user-images.githubusercontent.com/97371621/166822328-bfb26d4c-2c11-429f-8f6e-8e84f1b94450.png)

@@ -7,11 +7,11 @@ Computational Ion Optics
 ![tofplot_zx](https://user-images.githubusercontent.com/97371621/148947954-d5b24e93-795d-4907-a465-a015b97c1044.jpg)
 
 
-Full code C++, Make compiler and Draw (CAD schematic design) to run simulations of a functional VUV-Ligth Time-of-Flight Mass Spectrometer on ion optical computer simulation package – Ion Beam Simulator – IBSimu.
+Full code C++, Make compiler and Draw (CAD schematic design file) to run simulations of a functional VUV-Ligth Time-of-Flight Mass Spectrometer on ion optical computer simulation package – Ion Beam Simulator – IBSimu.
 
-[IBSimu](http://ibsimu.sourceforge.net/) has developed by T.Kalvas et al.
+[IBSimu](http://ibsimu.sourceforge.net/) have developed by T.Kalvas et al.
 
-The time-of-flight mass spectrometer (TOFMS), has been designed and built in later 90's, by [MACIEL J.B. et al.](https://aip.scitation.org/doi/abs/10.1063/1.54579), at Laboratory of Electrons and Fotons Impact ('[LIFE](https://www.iq.ufrj.br/laboratorios/laboratorio-de-impacto-de-fotons-e-eletrons-life/)' in Portuguese), Department of Physical Chemistry, Institute of Chemistry, Federal University of Rio de Janeiro – LIFE/DFQ/IQ-UFRJ, Brazil.
+The time-of-flight mass spectrometer (TOFMS), was designed and built in later 90's, by [MACIEL J.B. et al.](https://aip.scitation.org/doi/abs/10.1063/1.54579), at Laboratory of Electrons and Photons Impact ('[LIFE](https://www.iq.ufrj.br/laboratorios/laboratorio-de-impacto-de-fotons-e-eletrons-life/)' in Portuguese), Department of Physical Chemistry, Institute of Chemistry, Federal University of Rio de Janeiro – LIFE/DFQ/IQ-UFRJ, Brazil.
 
 The simulation parameters that set up the electrodes was obtained from 'FRAGMENTAÇÃO IÔNICA DE MOLÉCULAS NAS REGIÕES DO ULTRAVIOLETA DE VÁCUO E RAIOS-X: EMPREGO DAS TÉCNICAS TOF-MS E COINCIDÊNCIA ELÉTRON-ÍON'
 - LAGO, Alexsandre Figueiredo, Thesis (PhD) -- IQ–UFRJ, 2003.

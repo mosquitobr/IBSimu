@@ -9,14 +9,14 @@ Computational Ion Optics
 
 Full code C++, Make compiler and Draw (CAD schematic design file) to run simulations of a functional VUV-Ligth Time-of-Flight Mass Spectrometer on ion optical computer simulation package – Ion Beam Simulator – IBSimu.
 
-[IBSimu](http://ibsimu.sourceforge.net/) have developed by T.Kalvas et al.
+[IBSimu](http://ibsimu.sourceforge.net/) was developed by T.Kalvas et al.
 
 The time-of-flight mass spectrometer (TOFMS), was designed and built in later 90's, by [MACIEL J.B. et al.](https://aip.scitation.org/doi/abs/10.1063/1.54579), at Laboratory of Electrons and Photons Impact ('[LIFE](https://www.iq.ufrj.br/laboratorios/laboratorio-de-impacto-de-fotons-e-eletrons-life/)' in Portuguese), Department of Physical Chemistry, Institute of Chemistry, Federal University of Rio de Janeiro – LIFE/DFQ/IQ-UFRJ, Brazil.
 
-The simulation parameters that set up the electrodes was obtained from 'FRAGMENTAÇÃO IÔNICA DE MOLÉCULAS NAS REGIÕES DO ULTRAVIOLETA DE VÁCUO E RAIOS-X: EMPREGO DAS TÉCNICAS TOF-MS E COINCIDÊNCIA ELÉTRON-ÍON'
+The simulation parameters that set up the electrodes were obtained from 'FRAGMENTAÇÃO IÔNICA DE MOLÉCULAS NAS REGIÕES DO ULTRAVIOLETA DE VÁCUO E RAIOS-X: EMPREGO DAS TÉCNICAS TOF-MS E COINCIDÊNCIA ELÉTRON-ÍON'
 - LAGO, Alexsandre Figueiredo, Thesis (PhD) -- IQ–UFRJ, 2003.
 
-Some parameters for initial beams presents here and the code write, was based at code from 'RESONANCE IONIZATION SPECTROSCOPY WITH TIME OF FLIGHT MASS SPECTROMETRY'
+Some parameters for initial beams presents here and the code write, were based at code from 'RESONANCE IONIZATION SPECTROSCOPY WITH TIME OF FLIGHT MASS SPECTROMETRY'
 - Waso, Frederick John (2019-04), [Thesis (MSc)](http://scholar.sun.ac.za/handle/10019.1/106191) -- Stellenbosch University, 2019.
 
 # Histogram obtained by simulation:

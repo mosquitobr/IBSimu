@@ -29,6 +29,7 @@
 #include "sstream"
 
 
+
 using namespace std;
 
 
@@ -42,43 +43,59 @@ double Vdetions = -48e2; // ions detector
 double f =  0.5;
 double sc = 1/f;
 
-double E01 = 0.012; // particles 1 starting energy (eV)
-double E02 = 0.012; // particles 2 starting energy (eV)
-double E03 = 0.012; // particles 3 starting energy (eV)
+double E01 = 0.0454; // particles 1 starting energy (eV)
+double E02 = 0.0458; // particles 2 starting energy (eV)
+double E03 = 0.0461; // particles 3 starting energy (eV)
+double Ee = 12.7; // elec.start energy (eV): hn=IEi+KEi: 21.22(He I-lamp)=8.52(1th ion.energy)+KEi(electron cinetic energy): KEi = 12.69 eV
 
-double Npart1 = 5e4; // particles 1 number quantities
-double Npart2 = 5e4; // particles 2 number quantities
-double Npart3 = 5e4; // particles 3 number quantities
+double Tp1 = 0.0233; // particles 1 starting Temp_P (eV)
+double Tp2 = 0.0235; // particles 2 starting Temp_P(eV)
+double Tp3 = 0.0237; // particles 3 starting Temp_P (eV)
+double Tpe = 9.342e-8; // electron starting Temp_P (eV)
+
+double Tt1 = 7.471e-5; // particles 1 starting Temp_T (eV)
+double Tt2 = 7.526e-5; // particles 2 starting Temp_T(eV)
+double Tt3 = 7.581e-5; // particles 3 starting Temp_T (eV)
+double Tte = 2.992e-10; // electron starting Temp_T (eV)
+
+double Npart1 = 3e5; // particles 1 number quantities
+double Npart2 = 3e5; // particles 2 number quantities
+double Npart3 = 3e5; // particles 3 number quantities
+double Ne = Npart1+Npart2+Npart3; // electron number quantities
 
 double q = 1.0; // particle charge (in electron charges)
 double m1 = 136.2; // particle mass1 (in atomic units)
 double m2 = m1+1; // particle mass2 (in atomic units)
 double m3 = m2+1; // particle mass3 (in atomic units)
-double Tp = 1e-3; // praralel temperature (eV)
-double Tt = 1e-4; // transverse temperature (eV)
+double me = 1.0/1836; // electron mass (in atomic units)
 
-double vq1 = 1.3884e4*sqrt(E01/m1); // particles 1 starting velocity (m/s)
-double vq2 = 1.3884e4*sqrt(E02/m2); // particles 2 starting velocity (m/s)
-double vq3 = 1.3884e4*sqrt(E02/m3); // particles 3 starting velocity (m/s)
+double vq1 = 1.3897e4*sqrt(E01/m1); // particles 1 starting velocity (m/s)
+double vq2 = 1.3897e4*sqrt(E02/m2); // particles 2 starting velocity (m/s)
+double vq3 = 1.3897e4*sqrt(E02/m3); // particles 3 starting velocity (m/s)
+double vqe = 1.3897e4*sqrt(Ee/me);  // electron starting velocity (m/s)
 
-double vp1 = 1.3884e4*sqrt(Tp/m1); // particles 1 starting paralel velocity (m/s)
-double vp2 = 1.3884e4*sqrt(Tp/m2); // particles 2 starting paralel velocity (m/s)
-double vp3 = 1.3884e4*sqrt(Tp/m3); // particles 3 starting paralel velocity (m/s)
+double vp1 = 1.3897e4*sqrt(Tp1/m1); // particles 1 starting paralel velocity (m/s)
+double vp2 = 1.3897e4*sqrt(Tp2/m2); // particles 2 starting paralel velocity (m/s)
+double vp3 = 1.3897e4*sqrt(Tp3/m3); // particles 3 starting paralel velocity (m/s)
+double vpe = 1.3897e4*sqrt(Tpe/me); // electron starting paralel velocity (m/s)
 
-double vt1 = 1.3884e4*sqrt(Tt/m1); // particles 1 starting transverse velocity (m/s)
-double vt2 = 1.3884e4*sqrt(Tt/m2); // particles 2 starting transverse velocity (m/s)
-double vt3 = 1.3884e4*sqrt(Tt/m3); // particles 3 starting transverse velocity (m/s)
+double vt1 = 1.3897e4*sqrt(Tt1/m1); // particles 1 starting transverse velocity (m/s)
+double vt2 = 1.3897e4*sqrt(Tt2/m2); // particles 2 starting transverse velocity (m/s)
+double vt3 = 1.3897e4*sqrt(Tt3/m3); // particles 3 starting transverse velocity (m/s)
+double vte = 1.3897e4*sqrt(Tte/me); // electron starting transverse velocity (m/s)
 
 double r0 = 5e-4; // ion beam radius (m)
-double h = 1e-3; // thicness of cross overlap with particle radius beam X radius ionization source (m)
+double h = 1e-3;  // thicness of cross overlap with particle radius beam X radius ionization source (m)
 
 double I1 = (Npart1*vq1*1.602e-19)/h; // ion beam current 1
 double I2 = (Npart2*vq2*1.602e-19)/h; // ion beam current 2
-double I3 = (Npart2*vq3*1.602e-19)/h; // ion beam current 3
+double I3 = (Npart3*vq3*1.602e-19)/h; // ion beam current 3
+double Ie = (Ne*vqe*1.602e-19)/h;     // electrons beam current
 
-double J1 = I1/(r0*r0*M_PI); // beam linear current elect. density (A/m2)
-double J2 = I2/(r0*r0*M_PI); // beam linear current elect. density (A/m2)
-double J3 = I3/(r0*r0*M_PI); // beam linear current elect. density (A/m2)
+double J1 = I1/(r0*r0*M_PI); // ion beam linear current 1 elect. density (A/m2)
+double J2 = I2/(r0*r0*M_PI); // ion beam linear current 2 elect. density (A/m2)
+double J3 = I3/(r0*r0*M_PI); // ion beam linear current 3 elect. density (A/m2)
+double Je = Ie/(r0*r0*M_PI); // electron beam linear current elect. density (A/m2)
 
 // Simulation function
 void simu( int argc, char **argv )
@@ -129,7 +146,7 @@ void simu( int argc, char **argv )
     geom.set_boundary( 12, Bound(BOUND_DIRICHLET, Vdetions) );
    
     geom.build_mesh();
-    geom.build_surface();	
+    geom.build_surface();
     geom.save( "tofgeom.dat" );
     
     // Construct the required fields
@@ -159,30 +176,29 @@ void simu( int argc, char **argv )
 				     vq1, vp1, vt1, // velocity
 				     Vec3D(0,0,0.081), //center
 				     Vec3D(1,0,0), //dir1
-				     Vec3D(0,1,0), //dir2
+				     Vec3D(0,0,1), //dir2
 				     r0 );
 
 	pdb.add_cylindrical_beam_with_velocity( Npart2, J2, q, m2, 
 				     vq2, vp2, vt2, // velocity
 				     Vec3D(0,0,0.081), //center
 				     Vec3D(1,0,0), //dir1
-				     Vec3D(0,1,0), //dir2
+				     Vec3D(0,0,1), //dir2
 				     r0 );
 
 	pdb.add_cylindrical_beam_with_velocity( Npart3, J3, q, m3, 
 				     vq3, vp3, vt3, // velocity
 				     Vec3D(0,0,0.081), //center
 				     Vec3D(1,0,0), //dir1
-				     Vec3D(0,1,0), //dir2
+				     Vec3D(0,0,1), //dir2
 				     r0 );
 	
          // Define electron beam
-        pdb.add_cylindrical_beam_with_velocity( 1e4, 3.8, -1, 1.0/1836, 
-				     //1.3884e4*sqrt(30*1836), 1.3884e4*sqrt(Tp*1836), 1.3884e4*sqrt(Tt*1836), 
-				     1.88e6, 1.88e4, 5.949e4,
+        pdb.add_cylindrical_beam_with_velocity( Ne, Je, -1, me, 
+				     vqe, vpe, vte,
 				     Vec3D(0,0,0.081), //center
-				     -Vec3D(1,0,0), //-dir1
-				     Vec3D(0,1,0), //dir2
+				     Vec3D(1,0,0), //dir1
+				     Vec3D(0,0,1), //dir2
 				     r0 );
 					      
 	pdb.iterate_trajectories( scharge, efield, bfield );

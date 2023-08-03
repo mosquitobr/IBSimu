@@ -1,7 +1,7 @@
 [![License: GPL](https://img.shields.io/badge/License-GPL-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
 
-# Simulation IBSimu of a Light TOF-Mass Spectrometer 
+# Simulation IBSimu of a TOF-Mass Light Spectrometer 
 Computational Ion Optics
 
 ![tofplot_zx](https://user-images.githubusercontent.com/97371621/148947954-d5b24e93-795d-4907-a465-a015b97c1044.jpg)

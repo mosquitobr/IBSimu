@@ -7,7 +7,7 @@ Computational Ion Optics
 ![tofplot_zx](https://user-images.githubusercontent.com/97371621/148947954-d5b24e93-795d-4907-a465-a015b97c1044.jpg)
 
 
-Full code C++, Make compiler and Draw (CAD schematic design file) to run simulations of a functional VUV-Ligth Time-of-Flight Mass Spectrometer on ion optical computer simulation package – Ion Beam Simulator – IBSimu.
+Full code C++, Make compiler and Draw (CAD schematic design file) to run simulations of a functional VUV-Ligth Time-of-Flight Mass Spectrometer on ion optical computing simulation package – Ion Beam Simulator – IBSimu.
 
 [IBSimu](http://ibsimu.sourceforge.net/) was developed by T.Kalvas et al.
 
